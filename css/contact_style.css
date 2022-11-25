@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+#contact{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 3rem;
+}
+
+#contact .title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#contact form > div{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+#contact form > div label{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 1.2rem
+}
+
+#contact form > div input{
+    background:#fad2f5 ;
+    height: 2.5rem;
+    border: unset;
+    border-bottom: white 4px solid;
+}
+
+#contact form > div input:focus, 
+#contact form > div textarea:focus  {
+    outline: none;
+    background: #e292da;
+    color: white;
+}
+#contact form > div input:hover, 
+#contact form > div textarea:hover  {
+    background: #e292da;
+}
+
+
+#contact form > div textarea {
+    background: #fad2f5;
+    border: unset;
+    border-bottom: white 4px solid;
+}
+
+#contact form > div button {
+    width: 12rem;
+    background-color: var(--bgcolor);
+    height: 3.5rem;
+    border: white .2rem solid;
+    border-radius: unset;
+    color: white;
+    font-family: 'Nerko One', cursive;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    transition: background-color 0.25s;
+    margin: auto;
+}
+
+#contact form > div button:hover {
+    background-color: #e292da;;
+    border: #e292da;
+}
+
+.social-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.social-icons .button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    margin: 20px;
+    text-align: center;
+    background: #e292da;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    transition: all .3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons .button:hover {
+    width: 13rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 1rem;
+}
+
+.social-icons .icon {
+    color: white;
+    font-size: 3rem;
+    line-height: 5rem;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+footer span{
+    position: absolute;
+    right: 0;
+    font-size: .8rem;
+    bottom: 0;
+}
+
+@media screen and (max-width: 575px) {
+    #contact .title {
+        font-size: 1.5rem;
+    }
+    #contact form > div{
+        width: 20rem;
+    }
+    #contact form > div button {
+        width: 8rem;;
+        height: 3rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Patrick+Hand&display=swap');
+:root{
+    --bgcolor : #fad2f5;
+    /* --bgcolor2 : #e9a4df; */
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main {
+    background: var(--bgcolor);
+}
+#return_top {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #e292da;
+    /* border: #e292da 2px solid; */
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    box-shadow: 2px 5px 5px grey;
+    z-index: 100;
+
+}
+#return_top div {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    color:white;
+}
+
+#return_top:hover {
+    background-color: var(--bgcolor);
+}
+
+#return_top div:hover {
+    color: black;
+}
+
+#navbar {
+    padding: 2rem 0;
+}
+
+#navbar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar .navbar a img{
+    width: 15rem;
+}
+
+#navbar nav button i {
+    color: white;
+    border: none;
+}
+
+#navbar nav #navbarNav ul li {
+    margin: 0 2rem;
+}
+#navbar nav #navbarNav ul li:focus {
+    border: none;
+}
+
+#navbar nav #navbarNav ul li a {
+    width: 100%;
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Nerko One', cursive;
+}
+
+#navbar nav #navbarNav ul li a:hover {
+    color: #e292da;
+    font-size: 2.5rem;
+}
+#navbar nav #navbarNav ul li a.active {
+    color: #e292da;
+    font-size: 2.5rem;
+}
+
+#home {
+    padding: 0;
+}
+
+#home .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home .content .column {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+#home .content .column .img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+#home .content .column .img  img {
+    width: 100%;
+}
+#seemore_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+
+#seemore_btn button {
+    width: 12rem;
+    background-color: var(--bgcolor);
+    height: 3.5rem;
+    border: white .2rem solid;
+    border-radius: unset;
+    color: white;
+    font-family: 'Nerko One', cursive;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    transition: background-color 0.25s;
+}
+#seemore_btn button:hover {
+    background-color: #e292da;;
+    border: #e292da;
+}
+footer {
+    position: relative;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+footer span{
+    position: absolute;
+    right: 0;
+    font-size: .8rem;
+    bottom: 0;
+}
+
+@media screen and (max-width: 990px) {
+    #navbar {
+        padding: 1rem 0;
+    }
+    #navbar nav #navbarNav ul li {
+        margin: 0 1rem;
+    }
+    #navbar nav #navbarNav ul li a {
+        font-size: 1.5rem;
+    }
+    #navbar nav #navbarNav ul li a:hover {
+        color: #e292da;
+        font-size: 1.5rem;
+    }
+    #navbar nav #navbarNav ul li a.active {
+        color: #e292da;
+        font-size: 1.5rem;
+    }
+    #home .content {
+        display: flex;
+        flex-direction: column;  
+    }
+    #home .content .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #navbar {
+        padding: 0;
+        height: unset;
+    }
+    #navbar nav {
+        flex-direction: row;
+    }
+    #navbar nav #navbarNav ul li a {
+        font-size: 1.5rem;
+    }
+    #navbar .navbar a img{
+        width: 10rem;
+    }
+    #home .content {
+        padding: 3rem 3rem 0 3rem;
+    }
+    #return_top {
+        width: 3rem;
+        height: 3rem;
+    }
+    #return_top div {
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 3rem;
+        color: black;
+    }
+
+}
